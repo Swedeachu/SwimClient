@@ -20,7 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\client\gui\FrontEnd.cpp" />
-    <ClCompile Include="Source\directX\DirectWrapper.cpp" />
+    <ClCompile Include="Source\graphics\DirectWrapper.cpp" />
+    <ClCompile Include="Source\graphics\GuiWrapper.cpp" />
     <ClCompile Include="Source\helpers\stdafx.cpp" />
     <ClCompile Include="Source\imgui\imgui.cpp" />
     <ClCompile Include="Source\imgui\imgui_demo.cpp" />
@@ -33,7 +34,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\client\gui\FrontEnd.h" />
-    <ClInclude Include="Source\directX\DirectWrapper.h" />
+    <ClInclude Include="Source\graphics\DirectWrapper.h" />
+    <ClInclude Include="Source\graphics\GuiWrapper.h" />
     <ClInclude Include="Source\helpers\stdafx.h" />
     <ClInclude Include="Source\imgui\imconfig.h" />
     <ClInclude Include="Source\imgui\imgui.h" />

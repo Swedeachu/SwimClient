@@ -1,5 +1,6 @@
 #include "FrontEnd.h"
-#include "..\..\directX\DirectWrapper.h"
+#include "..\..\graphics\DirectWrapper.h"
+#include "..\..\graphics\GuiWrapper.h"
 
 FrontEnd::FrontEnd(int width, int height) : width(width), height(height)
 {
@@ -87,6 +88,9 @@ void FrontEnd::CreateMainWindow()
 		nullptr
 	);
 
+	ShowWindow(hwnd, SW_SHOW);
+	UpdateWindow(hwnd);
+
 	if (hwnd == nullptr)
 	{
 		throw std::runtime_error("Failed to create the main window.");
@@ -103,15 +107,11 @@ void FrontEnd::InitializeImGui()
 	ImGui_ImplWin32_Init(hwnd);
 	ImGui_ImplDX11_Init(directWrapper.GetDevice(), directWrapper.GetDeviceContext());
 
+	// Apply a dark theme
 	ImGui::StyleColorsDark();
 }
 
 void FrontEnd::DrawImGui()
 {
-	ImGui::Begin("Hello, ImGui!");
-
-	ImGui::Text("Hello, ImGui!");
-	ImGui::Text("This is a basic window.");
-
-	ImGui::End();
+	Graphics::GuiWrapper::DrawRectA(20, 20, 100, 100, 4, IM_COL32(255, 0, 0, 255));
 }

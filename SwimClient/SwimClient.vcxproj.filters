@@ -15,9 +15,6 @@
     <Filter Include="Source Files\client\gui">
       <UniqueIdentifier>{0942c01b-2113-43ac-bf51-a75e543965d1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\client\directX">
-      <UniqueIdentifier>{41d3c768-8d73-4f56-a4ca-76707990fe8e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\client\helpers">
       <UniqueIdentifier>{d3b12863-7762-48a2-8c02-02e0db10ae6e}</UniqueIdentifier>
     </Filter>
@@ -26,6 +23,9 @@
     </Filter>
     <Filter Include="Source Files\shaders">
       <UniqueIdentifier>{3749f4ae-8aec-4b99-bb5f-ffdeed413ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\graphics">
+      <UniqueIdentifier>{41d3c768-8d73-4f56-a4ca-76707990fe8e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -56,11 +56,14 @@
     <ClCompile Include="Source\imgui\imgui_widgets.cpp">
       <Filter>Source Files\client\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="Source\directX\DirectWrapper.cpp">
-      <Filter>Source Files\client\directX</Filter>
-    </ClCompile>
     <ClCompile Include="Source\client\gui\FrontEnd.cpp">
       <Filter>Source Files\client\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\graphics\DirectWrapper.cpp">
+      <Filter>Source Files\client\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\graphics\GuiWrapper.cpp">
+      <Filter>Source Files\client\graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,11 +94,14 @@
     <ClInclude Include="Source\imgui\imstb_truetype.h">
       <Filter>Source Files\client\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="Source\directX\DirectWrapper.h">
-      <Filter>Source Files\client\directX</Filter>
-    </ClInclude>
     <ClInclude Include="Source\client\gui\FrontEnd.h">
       <Filter>Source Files\client\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\graphics\DirectWrapper.h">
+      <Filter>Source Files\client\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\graphics\GuiWrapper.h">
+      <Filter>Source Files\client\graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

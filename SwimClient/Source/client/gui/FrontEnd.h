@@ -2,7 +2,7 @@
 #define FRONTEND_H
 
 #include "..\..\helpers\stdafx.h"
-#include "..\..\directX\DirectWrapper.h"
+#include "..\..\graphics\DirectWrapper.h"
 
 class FrontEnd
 {
