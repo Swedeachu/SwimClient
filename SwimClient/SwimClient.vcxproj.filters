@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\client">
+      <UniqueIdentifier>{a080be21-bd51-4205-8428-d4a5e65070e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\gui">
+      <UniqueIdentifier>{0942c01b-2113-43ac-bf51-a75e543965d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\directX">
+      <UniqueIdentifier>{41d3c768-8d73-4f56-a4ca-76707990fe8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\helpers">
+      <UniqueIdentifier>{d3b12863-7762-48a2-8c02-02e0db10ae6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\imgui">
+      <UniqueIdentifier>{f95e43ae-7d3d-4d06-bdf1-0535c64bb39c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shaders">
+      <UniqueIdentifier>{3749f4ae-8aec-4b99-bb5f-ffdeed413ebd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\SwimClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\helpers\stdafx.cpp">
+      <Filter>Source Files\client\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui_demo.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui_draw.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui_tables.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\directX\DirectWrapper.cpp">
+      <Filter>Source Files\client\directX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\client\gui\FrontEnd.cpp">
+      <Filter>Source Files\client\gui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\helpers\stdafx.h">
+      <Filter>Source Files\client\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imconfig.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imgui.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imgui_impl_dx11.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imgui_impl_win32.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imgui_internal.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imstb_rectpack.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imstb_textedit.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui\imstb_truetype.h">
+      <Filter>Source Files\client\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\directX\DirectWrapper.h">
+      <Filter>Source Files\client\directX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\client\gui\FrontEnd.h">
+      <Filter>Source Files\client\gui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Source\shaders\PixelShader.hlsl">
+      <Filter>Source Files\shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Source\shaders\VertexShader.hlsl">
+      <Filter>Source Files\shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
